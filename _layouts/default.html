@@ -1,1 +1,36 @@
 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
+    {{ site.head }}
+  </head>
+  <body>
+    <header>
+      <button id="darkModeToggle">🌓 Toggle Dark Mode</button>
+    </header>
+
+    {{ content }}
+
+    <!-- JS Toggle Script -->
+    <script>
+      const toggle = document.getElementById("darkModeToggle");
+      const body = document.body;
+
+      if (
+        localStorage.getItem("theme") === "dark" ||
+        (!localStorage.getItem("theme") && window.matchMedia('(prefers-color-scheme: dark)').matches)
+      ) {
+        body.classList.add("dark-mode");
+      }
+
+      toggle.addEventListener("click", () => {
+        body.classList.toggle("dark-mode");
+        const mode = body.classList.contains("dark-mode") ? "dark" : "light";
+        localStorage.setItem("theme", mode);
+      });
+    </script>
+  </body>
+</html>
