@@ -1,3 +1,27 @@
 theme: minima
+
+# Add this to override the default styles
+minima:
+  skin: null
+
+# Include your custom CSS
+include:
+  - assets/css/custom-dark.css
+
+# Add your CSS file to the site's head
+sass:
+  style: compressed
+
+plugins:
+  - jekyll-seo-tag
+
+# Insert your stylesheet into the site's <head>
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+      custom_css: "/assets/css/custom-dark.css"
+
 title: My blog
 author: Raymond R Hughes
