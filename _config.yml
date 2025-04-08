@@ -1,6 +1,3 @@
 theme: minima
-assets:
-  css:
-    - /assets/css/custom.css
 title: My blog
 author: Raymond R Hughes
