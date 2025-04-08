@@ -95,3 +95,17 @@ ul li small {
   font-size: 0.875rem;
   color: #a0a0a0;
 }
+
+/* Styling images */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  margin: 1rem 0;
+}
+
+img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
