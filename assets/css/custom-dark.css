@@ -109,3 +109,13 @@ img:hover {
   transform: scale(1.05);
   transition: transform 0.3s ease;
 }
+
+.blog-image {
+  max-width: 600px;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 1.5rem auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
