@@ -111,8 +111,8 @@ img:hover {
 }
 
 .blog-image {
-  max-width: 600px;
-  width: 100%;
+  max-width: 1000px;
+  width: 60%;
   height: auto;
   display: block;
   margin: 1.5rem auto;
